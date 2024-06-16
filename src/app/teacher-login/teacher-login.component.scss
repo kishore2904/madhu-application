@@ -1,0 +1,51 @@
+.body {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.login-container button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADD8E6;
+    color: black;
+    cursor: pointer;
+}
+.login-container a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.left-link {
+    text-align: left;
+    left: 10px;
+    bottom: 10px;
+}
+.right-link {
+    text-align: right;
+    right: 10px;
+    bottom: 10px;
+}
+.side-menu{
+    display: flex;
+}

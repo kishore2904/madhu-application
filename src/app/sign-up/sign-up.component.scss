@@ -1,0 +1,36 @@
+.body {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.signup-container {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    color: white;
+}
+.signup-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.signup-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: pink;
+    color: black;
+    cursor: pointer;
+}
+.signup-container a {
+    color: pink;
+    display: block;
+    margin-top: 10px;
+}
