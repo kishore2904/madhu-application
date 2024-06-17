@@ -15,11 +15,9 @@ export class MainLoginComponent {
   ){}
 
 navigate(){
-  console.log('button is working');
   this.router.navigate(['teacher-login']);
 }
 move(){
-  console.log('button cliks');
-  this.router.navigate(['studend-login']);
+  this.router.navigate(['student-login']);
 }
 }
