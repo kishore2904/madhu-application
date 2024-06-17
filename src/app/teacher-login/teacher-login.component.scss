@@ -43,9 +43,12 @@
 }
 .right-link {
     text-align: right;
-    right: 10px;
+    font-size: 15px;
+    right: 5px;
     bottom: 10px;
 }
 .side-menu{
     display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
