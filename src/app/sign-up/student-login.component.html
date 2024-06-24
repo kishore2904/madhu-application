@@ -1,15 +1,15 @@
 <div class="body">
     <div class="login-container">
-        <h2> Teachers Login</h2>
+        <h2>Login</h2>
      <form>
          <input type="text" placeholder="Username or Email" name="username_email" required><br>
          <input type="password" placeholder="Password" name="password" required><br>
          <button type="submit">Login</button>
         <div class="side-menu">
             <a href="#" class="left-link">Forget Password</a>
-         <nav>
-            <a [routerLink]="['/sign-up']" [queryParams]="{ value: 'true' }" class="right-link">Create a new account?</a>
-         </nav>
+            <nav>
+            <a routerlink="/sign-up" class="right-link">Create a new account?</a>
+           </nav>
         </div>
      </form>
  </div> 

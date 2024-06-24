@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { log } from 'console';
+import { RouterLink, RouterModule, Routes  } from '@angular/router';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-teacher-login',
   standalone: true,
-  imports: [],
+ imports: [RouterModule,RouterLink],
   templateUrl: './teacher-login.component.html',
   styleUrl: './teacher-login.component.scss'
 })
@@ -13,7 +13,4 @@ export class TeacherLoginComponent {
     private router: Router
   ){}
   
-  nextpage(){
-    this.router.navigate(['sign-up']);
-  }
 }

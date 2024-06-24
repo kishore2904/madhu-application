@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { log } from 'console';
 import { Router } from '@angular/router';
 
 @Component({
