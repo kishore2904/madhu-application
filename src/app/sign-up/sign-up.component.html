@@ -1,4 +1,6 @@
 <div class="body">
+    @if(login){<h1>teacher-login</h1>}
+    @else{<h1>student-login</h1>}
     <div class="signup-container">
         <form>
             <input type="text" placeholder="First Name" name="first_name" required><br>
@@ -7,7 +9,7 @@
             <input type="email" placeholder="Email Address" name="email" required><br>
             <input type="tel" placeholder="Mobile Number" name="mobile" required><br>
             <button type="submit">SignUp</button>
-            <a href="#">Already Have an account?</a>
+            <a  routerLink="/teacher-login">Already Have an account?</a>
         </form>
     </div>
 </div>
