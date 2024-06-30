@@ -1,15 +1,15 @@
+<form [formGroup]="signup" (ngSubmit)="submit()">
 <div class="body">
     @if(login){<h1>teacher-login</h1>}
     @else{<h1>student-login</h1>}
     <div class="signup-container">
-        <form>
-            <input type="text" placeholder="First Name" name="first_name" required><br>
-            <input type="text" placeholder="Last Name" name="last_name" required><br>
-            <input type="text" placeholder="Full Name" name="full_name" required><br>
-            <input type="email" placeholder="Email Address" name="email" required><br>
-            <input type="tel" placeholder="Mobile Number" name="mobile" required><br>
+            <input type="text" placeholder="First Name" name="first_name" formControlName="firstname"><br>
+            <input type="text" placeholder="Last Name" name="last_name"  formControlName="lastname"><br>
+            <input type="text" placeholder="Full Name" name="full_name" formControlName="fullname"><br>
+            <input type="email" placeholder="Email Address" name="email"  formControlName="email"><br>
+            <input type="tel" placeholder="Mobile Number" name="mobile" formControlName="mobile"><br>
             <button type="submit">SignUp</button>
             <a  routerLink={{value}}>Already Have an account?</a>
-        </form>
     </div>
 </div>
+</form>

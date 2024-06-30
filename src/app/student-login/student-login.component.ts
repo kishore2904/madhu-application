@@ -11,12 +11,13 @@ import { Router } from '@angular/router';
 })
 export class StudentLoginComponent {
   loginForm: FormGroup;
+
   constructor(
     private test:FormBuilder,
     private router: Router
   ){
     this.loginForm = this.test.group({
-      username:['',[Validators.email,Validators.required]],
+      username:['exmple@gmail.com',[Validators.email,Validators.required]],
       password:['',[Validators.required]]
     });
   }

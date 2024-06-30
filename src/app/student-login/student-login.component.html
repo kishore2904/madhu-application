@@ -1,10 +1,10 @@
-<form [ FormGroup ]="loginForm"(ng submit="login()")>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
 <div class="body">
     <div class="login-container">
         <h2>studentsLogin</h2>
-        <input type="text" placeholder="Username or Email" name="username_email" required, formcontrolName="username"><br>
-         <input type="password" placeholder="Password" name="password" required, formcontrolName="password"><br>
-         <button type="submit" (click)="login">Login</button>
+        <input type="text" placeholder="Username or Email" name="username"  formControlName="username"><br>
+         <input type="password" placeholder="Password" name="password" formControlName="password"><br>
+         <button type="submit" (click)="login()">Login</button>
         <div class="side-menu">
             <a href="#" class="left-link">Forget Password</a>
             <nav>
