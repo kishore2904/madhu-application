@@ -9,6 +9,7 @@ import { ActivatedRoute, Router, RouterLink, RouterModule } from '@angular/route
 })
 export class SignUpComponent implements OnInit {
   login:boolean | undefined;
+  value: string | undefined;
   constructor(private route: ActivatedRoute){}
 ngOnInit(): void {
   this.route.queryParams.subscribe(params =>{
@@ -18,9 +19,9 @@ ngOnInit(): void {
     }
    else{
     this.login==false;
+    this.value = '/student-login'
    }
     console.log(this.login);
   });
 }
-
 }

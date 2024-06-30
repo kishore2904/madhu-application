@@ -1,16 +1,16 @@
+<form [ FormGroup ]="loginForm"(ng submit="login()")>
 <div class="body">
     <div class="login-container">
         <h2>studentsLogin</h2>
-     <form>
-         <input type="text" placeholder="Username or Email" name="username_email" required><br>
-         <input type="password" placeholder="Password" name="password" required><br>
-         <button type="submit">Login</button>
+        <input type="text" placeholder="Username or Email" name="username_email" required, formcontrolName="username"><br>
+         <input type="password" placeholder="Password" name="password" required, formcontrolName="password"><br>
+         <button type="submit" (click)="login">Login</button>
         <div class="side-menu">
             <a href="#" class="left-link">Forget Password</a>
             <nav>
             <a [routerLink]="['/sign-up']" [queryParams]="{ value: 'false' }" class="right-link">Create a new account?</a>
            </nav>
         </div>
-     </form>
  </div> 
 </div>
+</form>
